@@ -66,7 +66,7 @@ for (x of supplyChanges) {
 console.log('8. Total supplies available is:');
 let total = 0;
 
-for (let i =0; i<supplyChanges.length; i++){
+for (i in supplyChanges){
     total += supplyChanges[i];
 }
 
@@ -79,3 +79,13 @@ console.log(total);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+totalParts = 572;
+boxes = 0;
+
+while (totalParts >= 7) {
+    totalParts = totalParts - 7;
+    boxes++;
+}
+
+console.log(`There are ${boxes} boxes filled and ${totalParts} parts left over `)
