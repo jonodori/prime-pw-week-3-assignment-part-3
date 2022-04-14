@@ -84,7 +84,7 @@ totalParts = 572;
 boxes = 0;
 
 while (totalParts >= 7) {
-    totalParts = totalParts - 7;
+    totalParts -= 7; 
     boxes++;
 }
 
